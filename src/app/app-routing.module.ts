@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { Dashboard02Component } from './components/dashboard02/dashboard02.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/login' },
@@ -15,7 +16,8 @@ const routes: Routes = [
       { path: 'alumno', loadChildren: () => import('./pages/alumno/alumno.module').then(m => m.AlumnoModule) },
       { path: 'patrocinador', loadChildren: () => import('./pages/patrocinador/patrocinador.module').then(m => m.PatrocinadorModule) }
     ]
-  }
+  },
+  { path: 'dashboard02', component: Dashboard02Component }
 ];
 
 @NgModule({

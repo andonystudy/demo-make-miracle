@@ -26,6 +26,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { Dashboard02Component } from './components/dashboard02/dashboard02.component';
 
 registerLocaleData(es);
 
@@ -34,7 +35,8 @@ registerLocaleData(es);
     AppComponent,
     InicioComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    Dashboard02Component
   ],
   imports: [
     BrowserModule,

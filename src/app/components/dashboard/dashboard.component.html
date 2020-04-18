@@ -13,6 +13,11 @@
         <i nz-icon nzType="home" nzTheme="outline"></i>
         <span>Inicio</span>
       </li>
+      <li routerLink="/dashboard02" nz-menu-item nzMatchRouter nz-tooltip nzTooltipPlacement="right"
+        [nzTooltipTitle]="isCollapsed ? 'Dashboard 02' : ''">
+        <i nz-icon nzType="dashboard" nzTheme="outline"></i>
+        <span>Dashboard 02</span>
+      </li>
       <li nz-submenu nzTitle="Mantenimiento" nzIcon="tool">
         <ul>
           <li nz-menu-item nzMatchRouter>
@@ -26,13 +31,6 @@
           </li>
         </ul>
       </li>
-      <!-- <li nz-submenu nzTitle="Form" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/login">Basic Form</a>
-          </li>
-        </ul>
-      </li> -->
       <li routerLink="/login" nz-menu-item nzMatchRouter nz-tooltip nzTooltipPlacement="right"
         [nzTooltipTitle]="isCollapsed ? 'Salir' : ''">
         <i nz-icon nzType="logout" nzTheme="outline"></i>
